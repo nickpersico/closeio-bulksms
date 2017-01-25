@@ -1,5 +1,5 @@
-# closeio-bulksms
-Send bulk SMS messages to Close.io via the API
+# Close.io - Send Bulk SMS
+Send SMS messages in bulk using your Close.io phone number
 
 ### Setup
 
@@ -12,13 +12,11 @@ Send bulk SMS messages to Close.io via the API
  1. `pip install -r requirements.txt`
  1. `python setup.py install`
 1. Go back to the main repository directory: `cd ..`
-1. Run the script: `python send_bulk_sms.py 'YOUR API KEY' 'CLOSE.IO SEARCH QUERY' 'YOUR SMS MESSAGE'
+1. Run the script: `python send_bulk_sms.py 'YOUR API KEY' 'CLOSE.IO SEARCH QUERY' 'YOUR SMS MESSAGE'`
 
 The script should find the leads in the search query and send an SMS to the first contact (and first phone number) on each lead. The script will output the raw response from the Close.io API.
 
-Here's an example command that will send an SMS to 5 leads that have the lead status as "potential":
-
-`python send_bulk_sms.py 'YOUR API KEY' 'status:confirmed limit:5' 'This is a test message!'
+Here's an example command that will send an SMS to 5 leads that have the lead status as "potential": `python send_bulk_sms.py 'YOUR API KEY' 'status:confirmed limit:5' 'This is a test message!'`
 
 ### Notes
 
