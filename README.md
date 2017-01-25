@@ -1,6 +1,10 @@
 # Close.io - Send Bulk SMS
 Send SMS messages in bulk using your Close.io phone number
 
+### How It Works
+
+The script will send an SMS to the first contact on a list of leads via a Close.io search query. The messages are sent via your Close.io phone number.
+
 ### Setup
 
 1. Clone the repository.
@@ -16,7 +20,11 @@ Send SMS messages in bulk using your Close.io phone number
 
 The script should find the leads in the search query and send an SMS to the first contact (and first phone number) on each lead. The script will output the raw response from the Close.io API.
 
-Here's an example command that will send an SMS to 5 leads that have the lead status as "potential": `python send_bulk_sms.py 'YOUR API KEY' 'status:confirmed limit:5' 'This is a test message!'`
+### Example
+
+Send an SMS to 5 leads that have the lead status as "potential":
+
+`python send_bulk_sms.py 'YOUR API KEY' 'status:confirmed limit:5' 'This is a test message!'`
 
 ### Notes
 
