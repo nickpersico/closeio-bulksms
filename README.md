@@ -29,4 +29,4 @@ Send an SMS to 5 leads that have the lead status as "potential":
 - SMS messages will be sent from your internal Close.io phone number. It must be SMS-enabled and a US/Canada number.
 - Any SMS that are sent will subtract from your free credits or be charged to your Close.io invoice. Here's more info about [SMS billing in Close.io](https://help.close.io/customer/en/portal/articles/2677062-how-does-sms-billing-work-).
 
-Questions? Email [nick@close.io](mailto:nick@close.io) or send a [tweet](https://www.twitter.com/nickpersico).
+Questions? Email [nick@close.io](mailto:nick@close.io) or send a [Tweet](https://www.twitter.com/nickpersico).
