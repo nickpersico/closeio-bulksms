@@ -11,11 +11,7 @@ The script will send an SMS to the first contact on a list of leads via a Close.
 1. In your Terminal, navigate to the folder: `cd /path/to/closeio-bulksms`.
 1. Create a virtual environment with [virtualenv](https://virtualenv.pypa.io/en/stable/): `virtualenv venv`
 1. Activate it: `source venv/bin/activate`
-1. This script uses [closeio-api](https://github.com/closeio/closeio-api), install it this way:
- 1. `cd closeio-api`
- 1. `pip install -r requirements.txt`
- 1. `python setup.py install`
-1. Go back to the main repository directory: `cd ..`
+1. Install the requirements needed to run the script: `pip install -r requirements.txt`
 1. Run the script: `python send_bulk_sms.py 'YOUR API KEY' 'CLOSE.IO SEARCH QUERY' 'YOUR SMS MESSAGE'`
 
 The script should find the leads in the search query and send an SMS to the first contact (and first phone number) on each lead. The script will output the raw response from the Close.io API.
