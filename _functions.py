@@ -11,12 +11,14 @@ def get_list_of_leads(api_key, search_query):
 	offset = 0
 	leads = []
 
+	query = 'sort:created {}'.format(search_query)
+
 	while has_more:
 
 		lead_results = api.get(
 			'lead',
 			params={
-		    	'query': search_query,
+		    	'query': query,
 		    	'_skip': offset,
 		    	'limit': 100
 			}

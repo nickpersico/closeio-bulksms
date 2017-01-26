@@ -8,11 +8,6 @@ API_KEY = sys.argv[1]
 SEARCH_QUERY = sys.argv[2]
 MESSAGE = sys.argv[3]
 
-# Check if message is less than 1000 characters
-if len(MESSAGE) > 1000:
-	print "ERROR: Your message is more than 1000 characters and cannot be sent"
-	sys.exit()
-
 # Get the user's internal Close.io phone number to send SMS
 internal_phone_number = get_internal_phone_number(API_KEY)
 
