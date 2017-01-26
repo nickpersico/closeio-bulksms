@@ -1,5 +1,4 @@
 import sys
-from collections import Counter
 from _functions import get_internal_phone_number
 from _functions import get_list_of_leads
 from _functions import post_sms
